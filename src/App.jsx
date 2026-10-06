@@ -2,9 +2,10 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ProductosProvider, useProductos } from './context/ProductosContext';
 
-// Importamos los organismos
 import Navbar from './components/organisms/Navbar';
 import CatalogoProductos from './components/organisms/CatalogoProductos';
+import Footer from './components/organisms/Footer'; 
+
 import TablaInventario from './components/organisms/TablaInventario';
 import FormularioProducto from './components/organisms/FormularioProducto';
 
@@ -28,7 +29,6 @@ function ContenidoPrincipal() {
     alert(`"${producto.nombre}" agregado al carrito.`);
   };
 
-  // Funciones del CRUD (Administración)
   const handleGuardarProducto = (datos) => {
     if (productoEditar) {
       actualizar(productoEditar.id, datos);
@@ -108,10 +108,17 @@ function ContenidoPrincipal() {
   );
 }
 
+
 function App() {
   return (
     <ProductosProvider>
-      <ContenidoPrincipal />
+      <div className="d-flex flex-column min-vh-100">
+        <Navbar />
+        <main className="container py-4 flex-grow-1">
+          <CatalogoProductos />
+        </main>
+        <Footer /> {/* <--- Lo agregas al final */}
+      </div>
     </ProductosProvider>
   );
 }
