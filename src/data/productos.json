@@ -1,0 +1,90 @@
+    [
+  {
+    "id": 1,
+    "codigo": "HER-001",
+    "nombre": "Taladro Percutor 13mm 750W",
+    "categoria": "Herramientas Eléctricas",
+    "marca": "DeWalt",
+    "precioVenta": 45990,
+    "stock": 8,
+    "stockMinimo": 2,
+    "imagen": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "id": 2,
+    "codigo": "HER-002",
+    "nombre": "Martillo de Galpón 16 oz",
+    "categoria": "Herramientas Manuales",
+    "marca": "Stanley",
+    "precioVenta": 8990,
+    "stock": 15,
+    "stockMinimo": 5,
+    "imagen": "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "id": 3,
+    "codigo": "EPP-001",
+    "nombre": "Casco de Seguridad Blanco",
+    "categoria": "Seguridad e Higiene",
+    "marca": "MSA",
+    "precioVenta": 6490,
+    "stock": 1,
+    "stockMinimo": 3,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_862098-MLC108963645455_032026-O-casco-seguridad-msa-vgard-500-tipo-gorra-blanco.webp"
+  },
+  {
+    "id": 4,
+    "codigo": "PIN-001",
+    "nombre": "Esmalte al Agua Blanco 1 Galón",
+    "categoria": "Pinturas y Acabados",
+    "marca": "Sipa",
+    "precioVenta": 24990,
+    "stock": 12,
+    "stockMinimo": 4,
+    "imagen": "https://easycl.vteximg.com.br/arquivos/ids/5074515/1365040-0000-001.jpg?v=638743890702270000"
+  },
+  {
+    "id": 5,
+    "codigo": "HER-003",
+    "nombre": "Esmeril Angular 4 1/2\" 700W",
+    "categoria": "Herramientas Eléctricas",
+    "marca": "Makita",
+    "precioVenta": 38990,
+    "stock": 6,
+    "stockMinimo": 2,
+    "imagen": "https://cdnx.jumpseller.com/www-san-antonio-cl/image/67923541/resize/700/700?1785159638"
+  },
+  {
+    "id": 6,
+    "codigo": "HER-004",
+    "nombre": "Juego de Llaves Combinadas 12 Pzas",
+    "categoria": "Herramientas Manuales",
+    "marca": "Bahco",
+    "precioVenta": 18990,
+    "stock": 10,
+    "stockMinimo": 3,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_658151-MLC114021038609_072026-O-juego-llaves-combinadas-smart-tools-imagen-12-pzas.webp"
+  },
+  {
+    "id": 7,
+    "codigo": "MAT-001",
+    "nombre": "Saco de Cemento 25 kg",
+    "categoria": "Materiales de Construcción",
+    "marca": "Melón",
+    "precioVenta": 5490,
+    "stock": 40,
+    "stockMinimo": 10,
+    "imagen": "https://cdnx.jumpseller.com/ferrejardin/image/77525820/1363022-0000-001.webp?1780932711"
+  },
+  {
+    "id": 8,
+    "codigo": "EPP-002",
+    "nombre": "Guantes de Nitrilo Multiuso",
+    "categoria": "Seguridad e Higiene",
+    "marca": "Steelpro",
+    "precioVenta": 2990,
+    "stock": 25,
+    "stockMinimo": 5,
+    "imagen": "https://maxservice.vtexassets.com/arquivos/ids/186398/200000870-1.jpg?v=639076245777170000"
+  }
+]
