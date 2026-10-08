@@ -15,7 +15,7 @@ function Footer() {
           <Col md={4}>
             <h6 className="fw-bold text-uppercase mb-3">Contacto</h6>
             <ul className="list-unstyled text-muted small">
-              <li>📍 Av. Bernardo O'Higgins 1234, Santiago</li>
+              <li>📍 La Serena, Región de Coquimbo</li>
               <li>📞 +56 9 1234 5678</li>
               <li>✉️ contacto@ferreterialosmaestros.cl</li>
             </ul>

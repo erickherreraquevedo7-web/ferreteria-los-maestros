@@ -2,34 +2,31 @@ import { useState } from 'react';
 import { Row, Col, Alert } from 'react-bootstrap';
 import TarjetaProducto from '../molecules/TarjetaProducto';
 import FiltroCategoria from '../molecules/FiltroCategoria';
+import { CATEGORIAS } from '../../utils/categorias';
 
-const CATEGORIAS_FERRETERIA = [
-  "Herramientas Eléctricas",
-  "Herramientas Manuales",
-  "Materiales de Construcción",
-  "Seguridad e Higiene",
-  "Pinturas y Acabados",
-  "Fijaciones y Tornillos",
-  "Plomería y Gasfitería",
-  "Electricidad",
-  "Jardín y Agrícola"
-];
+function CatalogoProductos({
+  productos = [],
+  onAgregarCarrito,
+  onVerDetalle,
+  categoriaInicial = '',
+  busquedaInicial = '',
+}) {
+  const [categoria, setCategoria] = useState(categoriaInicial);
+  const [busqueda, setBusqueda] = useState(busquedaInicial);
 
-function CatalogoProductos({ productos = [], onAgregarCarrito }) {
-  const [categoria, setCategoria] = useState('');
-  const [busqueda, setBusqueda] = useState('');
-
+  const texto = busqueda.toLowerCase();
   const productosFiltrados = productos.filter((p) => {
     const coincideCategoria = categoria === '' || p.categoria === categoria;
-    const coincideTexto = p.nombre.toLowerCase().includes(busqueda.toLowerCase()) ||
-                          p.marca.toLowerCase().includes(busqueda.toLowerCase());
+    const coincideTexto =
+      p.nombre.toLowerCase().includes(texto) ||
+      (p.marca ?? '').toLowerCase().includes(texto);
     return coincideCategoria && coincideTexto;
   });
 
   return (
     <section>
-      <FiltroCategoria 
-        categorias={CATEGORIAS_FERRETERIA}
+      <FiltroCategoria
+        categorias={CATEGORIAS}
         categoriaSeleccionada={categoria}
         onCambiarCategoria={setCategoria}
         busqueda={busqueda}
@@ -44,9 +41,10 @@ function CatalogoProductos({ productos = [], onAgregarCarrito }) {
         <Row xs={1} md={2} lg={3} className="g-4">
           {productosFiltrados.map((producto) => (
             <Col key={producto.id}>
-              <TarjetaProducto 
-                producto={producto} 
-                onAgregar={onAgregarCarrito} 
+              <TarjetaProducto
+                producto={producto}
+                onAgregar={onAgregarCarrito}
+                onVerDetalle={onVerDetalle}
               />
             </Col>
           ))}
