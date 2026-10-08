@@ -1,16 +1,34 @@
-# React + Vite
+# Ferretería Los Maestros
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Integrante
+- Erick Herrera (eric.herrera@duocuc.cl)
+*Nota: Proyecto desarrollado de manera individual.*
 
-Currently, two official plugins are available:
+## Caso
+Forma E: Ferretería Los Maestros
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Descripción del caso
+Sistema de ventas y catálogo para materiales de construcción, herramientas y ferretería general.
+La aplicación permite a los contratistas y clientes iniciar sesión, revisar el catálogo con validación de stock, agregar productos a un carrito y gestionar pedidos.
 
-## React Compiler
+## Estructura del proyecto
+src/
+├── components/
+│   ├── atoms/
+│   ├── molecules/
+│   ├── organisms/
+│   └── templates/
+├── context/
+├── data/
+├── pages/
+├── services/
+└── utils/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías
+- React + Vite
+- React Bootstrap
+- React Router DOM
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Cómo ejecutar el proyecto
+1. `npm install`
+2. `npm run dev`
